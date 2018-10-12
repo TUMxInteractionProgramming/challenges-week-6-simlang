@@ -37,11 +37,6 @@ $(document).ready( function(){
         console.log('Updating message elements...');
         $.each(currentChannel.messages, function(i) {
             var tmp = currentChannel.messages[i].update();
-            if(tmp == 1){
-                currentChannel.messages[i].message.remove()
-                currentChannel.messages.splice(i, 1);
-                currentChannel.messageCount--;
-            }
         });
     }, 10000)
 });
