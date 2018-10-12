@@ -305,7 +305,7 @@ function createChannel() {
     // #10 #new: #name of the channel
     var name = $('#new-channel').val();
     //initial message
-    var text = $('#message').val();
+    var text = $('#message-input').val();
     // Check whether channel #name input field is #valid.
     if (name.length == 0 || name.search(" ") > -1 || name.search("#") == -1) {
         alert('Enter valid channel name! ("#" at the beginning, no spaces)');
