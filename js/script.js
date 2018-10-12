@@ -196,6 +196,8 @@ function sendMessage() {
 
     // clear the #message input
     $('#message-input').val('');
+
+    updateCharCount();
 }
 
 /**
